@@ -1,0 +1,22 @@
+when cyclic sort is used ?
+
+array is given in the form of N
+         0 1 2 3 4
+example {2,5,4,3,1}
+now you can see element is ( 0 - N-1)
+ just applying cyclic sort
+
+
+ this topic * OP
+
+ bcz so many company ask this cyclic sort / modification cyclic sort
+ Amazon , google ,.... so on
+ but no facebook
+
+
+
+ // rule
+     check range  [0,n-1]
+        then correctindex = arr[i]
+     check rande [1,N]
+           then correctindex =arr[i]-1;

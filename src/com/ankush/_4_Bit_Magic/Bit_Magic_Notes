@@ -1,0 +1,57 @@
+Basics of Bit Manipulation
+
+Bitwise Operator
+
+AND & ,  OR |  , NOT ~  , XOR  ^   ,  leftshift <<  ,  RightShift  >>
+
+
+
+Numbers system toh pata hai
+
+Decimal , binary , Octal , Hex .
+
+conversion
+1.  decimal to any base b
+
+        (17) --> base 2   (10001)base2  = (17)base10
+          keep divided by 2 ,take remainder write opposite
+
+        (25) ---> base X
+          key divided by base X , take remainder write opposite
+
+2. covert any base to Decimal D
+        (10001)base 2 == ()base10
+
+        steps: multiply and add the power of base with digits
+
+        1 * 2^4 + 0 *2^3 + 0 * 2^2 + 0 *2 ^ 1 + 1 * 2^0  = 17
+
+        take in recursion (x1 * base^(pow+=1)
+
+
+
+Hacks....
+
+focus on imp concept
+
+left shift operator (<<)
+
+    10base10  = (1010)base10
+
+        10 << 1  = ( 10100 ) base2 = 20
+
+        hacked....
+
+        any number << 1 = double that number
+
+//  left shift operator
+
+        General point  a << b = a * 2^b     for left shift
+
+ Right Shift operator  ( >> )
+
+ (0011001)base2 >> 1   gives (001100)
+ for all number system
+
+ General point
+  a >> b = a / 2^b    for right shift

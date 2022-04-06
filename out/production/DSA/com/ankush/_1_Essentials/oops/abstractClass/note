@@ -1,0 +1,2 @@
+
+Abstract classes are essential to providing an abstraction to the code to make it reusable and extendable. For example, a Vehicle parent class with Truck and Motorbike inheriting from it is an abstraction that easily allows more vehicles to be added.
