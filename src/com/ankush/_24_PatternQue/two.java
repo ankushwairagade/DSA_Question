@@ -1,4 +1,4 @@
-package com.ankush._20_PatternQue;
+package com.ankush._24_PatternQue;
 
 /*
     2.  *

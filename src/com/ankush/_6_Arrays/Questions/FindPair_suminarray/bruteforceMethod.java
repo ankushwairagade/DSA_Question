@@ -11,24 +11,17 @@ public class bruteforceMethod {
 
     }
 
-    static int[] sol(int []arr ,int sum)        // ye function 0(n^2) so high
+    static int [] sol(int []arr,int sum)
     {
-        int a=-1,b=-1,flag=0;
-
         for (int i = 0; i < arr.length; i++) {
-
-            for (int j = i+1; j < arr.length; j++) {
-
-                if(arr[i] + arr[j] == sum)
-                {
-                    a=arr[i]; b=arr[j]; flag=1; break;
+            for (int j = i; j < arr.length-1; j++) {
+                if(arr[i]+arr[j+1] == sum)
+                {   int[] a= new int[]{i, j + 1};
+                    return a;
                 }
             }
-
-            if(flag == 1) break;
         }
-
-        int[] re ={a,b};
-        return re;
+        int[]x=new int[]{-1,-1};
+    return x;
     }
 }
