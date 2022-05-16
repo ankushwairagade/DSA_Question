@@ -63,7 +63,8 @@ public class ReverseLinkedList {
         ll.Display();
         ll.Reverse();
         ll.Display();
-
+       // ll.Greatestrigthside();
+        System.out.println(ll.head.next.next.next.rand.val);
 
     }
 }

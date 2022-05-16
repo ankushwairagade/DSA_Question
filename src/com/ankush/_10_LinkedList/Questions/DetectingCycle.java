@@ -5,7 +5,7 @@ package com.ankush._10_LinkedList.Questions;
 // Detecting loop point from where loop begins
 
 public class DetectingCycle {
-    Node head=null;
+    private Node head=null;
     class Node
     {
         int val;
