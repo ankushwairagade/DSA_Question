@@ -9,8 +9,8 @@ public class phonelogic {
 
       //  phonepad("","129");
 
-        System.out.println(phonepadret("","12"));
-        System.out.println(PhonepadCount("","12"));
+        System.out.println(phonepadret("","2"));
+      //  System.out.println(PhonepadCount("","12"));
     }
 
     static void phonepad(String p , String up)
@@ -25,8 +25,6 @@ public class phonelogic {
                     if(ch == '{'){break;}
                     phonepad(p + ch, up.substring(1));
                 }
-
-
     }
 
 
