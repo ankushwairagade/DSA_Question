@@ -1,0 +1,161 @@
+Preq.
+1. Recursion
+2. OOP
+
+
+
+why? tree
+
+-> O(log N) eff. insertion and deletion
+-> Ordered Storages
+-> Cost Efficient
+
+-> unbalanced binary Tree
+    O(n)
+how to solve this ??  --> Self balance BT
+
+
+-> Balanced binary Tree
+
+
+
+Where is it used ??
+
+File Systems, Databases, Networking Algorithms, Mathemathics equations,
+Decision Trees, huffmanCoding, FutureData Structures like (heaps, graphs, ..)
+
+
+
+Node :  int Val
+        Node next
+
+
+
+ Node : int Val
+        Node left
+        Node right
+
+
+
+  Properties
+
+  Size = total number of Nodes
+  Child and parent
+  Sibilings
+  Edge
+  Height --> Max of of edges betn from the node to leaf Node max(2,3,5) = 5 is max height ( top to bottom)
+  leaf Node
+  level --> sub height of node - height of node == 0
+   Ancertor and decenstor
+
+   -------------
+
+
+
+   Types of Binary Tree
+   1. Complete Binary Tree
+   -> All level full
+   -> Last full from L to R
+
+   2. Full Binary Tree / Strict Binary Tree
+   -> each node has Zero or Two Children
+
+   // use in Compression Data
+
+   3. Perfect Binary Tree
+   --> all level are full
+
+   4. Height Balance Tree
+   avg height O(logN)
+
+   5. Skewed Binary Tree O(N)  like LinkedList
+
+   6. Ordered Binary Tree
+   -> Every node has some Propertry
+   ex : BST
+
+_______________________
+
+   Properties that will help you in questions
+
+   1. perfect binary tree , height = h , total nodes = 2^(h+1) - 1
+   2. perfect binary tree , total leave node = 2^h
+   . perfect binary tree , internal Node = 2^(h+1) - 1 - 2^h
+   3. N = no of leeaves  log(n+1) leaves atleast  N nodes --> log(n+1) min levels
+   4. Strict Binary Tree  N --> leaf nodes
+        N - 1 = internal nodes
+        No of leave Node = no of internal Node + 1
+
+   5.
+
+
+///  Implementation of Tree
+
+1. Linked List Representation ( normal Trees with null )
+2. Sequential --> using Array (heap DS --> CompleteBinary )
+
+
+
+
+
+// Create Class BST
+
+define Structure
+
+Node{
+Value,
+Node left and Node right
+ create Constructor for Value
+}
+
+
+// private Node root;;;;
+
+
+// Insertion
+
+
+public populate( with Scanner class){
+    Asking value
+    put into root
+    and again populate(Scanner, root);
+}
+
+// doing Recurrsion
+private populate(Scanner, Node){
+
+// want to insert on left
+if(true){
+{
+asking Value
+node.left = new Node(value);
+
+// Recursion
+populate(Scanner, node.left);
+}
+
+
+// want to insert on right
+if( right == true){
+node.right = new Node(value);
+// Recursion
+populate(Scanner, node.left);
+}
+
+}
+
+
+// so Inserting happing on left side of all nodes then take care of right Nodes
+
+
+//  this is how populate a binary tree / n-tree function works
+
+
+
+Traversal of n- tree
+
+
+
+
+
+

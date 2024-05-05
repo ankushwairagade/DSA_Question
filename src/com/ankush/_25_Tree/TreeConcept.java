@@ -1,2 +1,4 @@
-package com.ankush._25_Tree;public class TreeConcept {
+package com.ankush._25_Tree;
+
+public class TreeConcept {
 }
