@@ -15,6 +15,11 @@ public class DesignLRU {
         CACHE_SIZE=capacity;
     }
 
+    DesignLRU(){
+        deque = new ArrayDeque<>();
+        CACHE_SIZE=5; // default
+    }
+
     void InsertintoCache(int page)
     {   totalref++;
         if(deque.size() < CACHE_SIZE)

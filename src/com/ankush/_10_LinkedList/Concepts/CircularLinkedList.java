@@ -1,24 +1,24 @@
 package com.ankush._10_LinkedList.Concepts;
 
-public class CircularLinkedList {
+public class CircularLinkedList<V> {
 
     Node head;
     class Node
     {
-        int val;
+        V val;
         Node next;
 
-        public Node(int val) {
+        public Node(V val) {
             this.val = val;
         }
 
-        public Node(int val, Node next) {
+        public Node(V val, Node next) {
             this.val = val;
             this.next = next;
         }
     }
 
-    void InsertatBegin(int val)
+    void InsertatBegin(V val)
     {
         Node in = new Node(val);
         if(head == null)
@@ -43,7 +43,7 @@ public class CircularLinkedList {
 
 
     public static void main(String[] args) {
-        CircularLinkedList Cll = new CircularLinkedList();
+        CircularLinkedList<Integer> Cll = new CircularLinkedList<>();
         Cll.InsertatBegin(20);
         Cll.InsertatBegin(65);
         Cll.InsertatBegin(80);

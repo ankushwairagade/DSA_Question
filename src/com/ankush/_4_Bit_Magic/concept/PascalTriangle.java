@@ -4,16 +4,16 @@ public class PascalTriangle {
     public static void main(String[] args) {
 
         // T(n)= 0(n^2)
-        /*              int s=0;
+                    int s=0;
         for (int i = 1; i < 20; i++) {
             for (int j = 0; j < i; j++) {
                     s^=j;
             }
             System.out.println(s);
             s=0;
-        }*/
+        }
 
-            // t(n)= 0(n)
+          //  t(n)= 0(n)
         for (int i = 0; i < 20; i++) {
             System.out.println(Xor(i));
         }

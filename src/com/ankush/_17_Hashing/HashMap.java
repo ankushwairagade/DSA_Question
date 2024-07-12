@@ -43,7 +43,7 @@ public class HashMap {
     //   get(key), put(key,value) , remove(key),   getbucketIndex(key)
 
     // hash function Modular hash
-    int GetBucketIndex(Integer key) {
+    int getBucketIndex(Integer key) {
         return key % buckets.length;
         // hash function   key  %  n = location
     }
@@ -52,7 +52,7 @@ public class HashMap {
         if (key == null || value == null) {
             throw new IllegalArgumentException("key or value is null");
         }
-        int indexpos = GetBucketIndex(key);
+        int indexpos = getBucketIndex(key);
         HashNode head = buckets[indexpos];
         while (head != null) {
             if (head.key.equals(key)) {
@@ -61,7 +61,6 @@ public class HashMap {
             }
             head = head.next; // next
         }
-
         size++; // mean how many index position filled so_far
 
         head = buckets[indexpos];    // pointing to first node
@@ -72,7 +71,7 @@ public class HashMap {
     }
 
     public String get(Integer key) {
-        int positionindex = GetBucketIndex(key);
+        int positionindex = getBucketIndex(key);
         HashNode head = buckets[positionindex];
 
         while (head != null) {
@@ -85,10 +84,9 @@ public class HashMap {
     }
 
     public String remove(Integer key) {
-        int indexposition = GetBucketIndex(key);
+        int indexposition = getBucketIndex(key);
         HashNode curr = buckets[indexposition];
         HashNode prev = null;
-
 
         while (curr != null) {
             if (curr.key.equals(key)) break;

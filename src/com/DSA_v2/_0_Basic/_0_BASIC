@@ -1,0 +1,48 @@
+TYPE OF LANGUAGES
+1. Procedural
+2. Functional
+3. Object Oriented
+
+
+python supports all types (procedural,functional and oo)
+but java supports (functional and oo )
+
+
+Static vs Dynamic Languages
+
+static mean
+int a = 10;
+Type checking at compile Time
+More control
+
+
+dynamic mean
+a =10;
+a ="hellooo"
+Type checking at runtime
+
+
+Memory Management
+
+a = 10
+
+a is reference Object and 10 is Object
+
+two memo (heap and stack)
+
+heap ds where actual objects is stored  like 10 is stored in heap mem
+Stack ds where memory reference is stored like a is stored in stack mem
+
+
+Garbage Collection
+
+it run automatically by JVM,
+it will destroy the object which don;t have any kind of references available..
+
+
+
+Java Architecture
+
+take java files (src files)  --> compiler into class files  --> this .class files need jvm to run (JRE) ---> machine code
+
+
